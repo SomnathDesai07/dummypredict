@@ -12,7 +12,7 @@
 <div class="background">
         <div class="container">
             <h1>Register Your Dream House</h1>
-            <form method="POST" class="form" action="{% url 'result' %}">
+            <form method="POST" >
                 {% csrf_token %}
                 <div class="form-group">
                     <label for="id_area_type">area_type:</label>
@@ -51,8 +51,9 @@
                     {{ form.price }}
                 </div>
                <div class="button-container">
-                    <input type="submit" value="Send Now" class="submit-button">
 
+                   <a href="/result" ><button type="button" class="btn btn-primary">PRIDICT</button></a>
+<br>
                      <a href="/" class="styled-link">Previous Page</a>
                </div>
             </form>
